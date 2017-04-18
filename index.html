@@ -15,11 +15,6 @@
 
 <body>
 
-
-    {#Navbar Content#}
-
-
-
             <div class="container">
             <nav>
                 <a id="top"> Tony Clayton </a>
@@ -36,7 +31,7 @@
 
 
 
-            {#Home Section#}
+
 
 
 
@@ -63,7 +58,7 @@
             </div>
 
             <div class='img-container'>
-                <img class='profile-shot' src='../public/assets/img/toneh.jpg' alt='' />
+                <img class='profile-shot' src='./assets/img/toneh.jpg' alt='' />
             </div>
 
             <div class='skills-third-row'>
@@ -87,7 +82,6 @@
 
 
 
-        {#About section#}
 
 
 
@@ -118,7 +112,6 @@
 
 
 
-            {#Project Section#}
 
 
 
@@ -128,13 +121,51 @@
                 <h1> Portfolio </h1>
 
                 <p> Below are just a few of my projects, utilizing various technologies, frameworks, and designs. <br />
-                    The Projects listed here show my growth and diversity as a developer.
+                    The Projects listed here show my growth and diversity as a developer. 
                 </p>
+                <p> Click the project's icon for more information and what role I played! </p>
             </div>
                <div class='image-container'>
 
                    <div class='logo-container'>
-                       <img class='tukio' src='../public/assets/img/tukio-180x180.png' href='https://tukio-webapp.herokuapp.com/'></img>
+
+                   <a href='#openModal'>
+                        <img class='tukio' src='./assets/img/tukio-180x180.png' href='https://tukio-webapp.herokuapp.com/'></img>
+                    </a>
+                       <div id='openModal' class='modalOne'>
+
+                           <div>
+                               <a href='#close' title='Close' class='close'> X </a>
+                                <h2> Tukio </h2>
+                                <p> Tukio is an app that allows authenticated users to search event tickets through Eventful API, 
+                                    save events of their choice and commit to buy discounted tickets for those events.
+
+                                    A progress bar dynamically updates as users commit to buy tickets for the events.</p>
+
+                                 <h2> My Role: </h2>
+                                 <p> Google Maps API + Eventful API.  Using Reactjs+Redux I was responsible for taking the users Search Results
+                                     from the Eventful API and displaying them as markers on the map which represented the various venues from
+                                     their related search.
+                                 </p>
+
+                            <span class='modal-links'>
+                                 <a href='https://github.com/Slicktone/tukio'> 
+                                    <p> Repo </p> 
+                                 </a> 
+                                 <p> || </p>
+                                 <a href='https://tukio-webapp.herokuapp.com/'> 
+                                    <p> Website </p>
+                                 </a>
+                            </span>
+
+                                <a href='#close-link' title='Close' class='close-link'>
+                                   <p> Close </p> 
+                                </a>
+                           </div>
+
+
+                       </div>
+
                             
                             <div class='project-info'>
                                 <a href='https://tukio-webapp.herokuapp.com/' target='_blank'>
@@ -144,7 +175,42 @@
                     </div>
 
                     <div class='logo-container'>
-                       <img class='city-trek' src='../public/assets/img/city-trek-logo-150.png' href='https://city-trek.herokuapp.com/'></img>
+
+                    <a href='#openModalTwo'>
+                       <img class='city-trek' src='./assets/img/city-trek-logo-150.png' href='https://city-trek.herokuapp.com/'></img>
+                    </a>
+
+                     <div id='openModalTwo' class='modalTwo'>
+                          <div>
+                               <a href='#close' title='Close' class='close'> X </a>
+                                <h2> City Trek </h2>
+                                <p> City Trek is an app that allows authenticated users to search event tickets through Eventful API, 
+                                    save events of their choice and commit to buy discounted tickets for those events.
+
+                                    A progress bar dynamically updates as users commit to buy tickets for the events.</p>
+
+                                 <h2> My Role: </h2>
+                                 <p> Google Maps API + Eventful API.  Using Reactjs+Redux I was responsible for taking the users Search Results
+                                     from the Eventful API and displaying them as markers on the map which represented the various venues from
+                                     their related search.
+                                 </p>
+
+                            <span class='modal-links'>
+                                 <a href='https://github.com/Slicktone/tukio'> 
+                                    <p> Repo </p> 
+                                 </a> 
+                                 <p> || </p>
+                                 <a href='https://tukio-webapp.herokuapp.com/'> 
+                                    <p> Website </p>
+                                 </a>
+                            </span>
+
+                                <a href='#close-link' title='Close' class='close-link'>
+                                   <p> Close </p> 
+                                </a>
+                           </div>
+                     </div>
+
                          <div class='project-info'>
                                 <a href='https://city-trek.herokuapp.com/' target='_blank'>
                                     <h2> City Trek </h2>
@@ -153,8 +219,40 @@
                     </div>
 
                     <div class='logo-container'>
-                       <img class='north-east-trees' src='../public/assets/img/NET-logo-250.png' href='http://www.northeasttrees.org/'></img>
-                          
+                        <a href='#openModalThree'>
+                            <img class='north-east-trees' src='./assets/img/NET-logo-250.png' href='http://www.northeasttrees.org/'></img>
+                        </a>
+
+                          <div id='openModalThree' class='modalThree'>
+                          <div>
+                               <a href='#close' title='Close' class='close'> X </a>
+                                <h2> North East Trees </h2>
+                                <p> North East Trees is an app that allows authenticated users to search event tickets through Eventful API, 
+                                    save events of their choice and commit to buy discounted tickets for those events.
+
+                                    A progress bar dynamically updates as users commit to buy tickets for the events.</p>
+
+                                 <h2> My Role: </h2>
+                                 <p> Google Maps API + Eventful API.  Using Reactjs+Redux I was responsible for taking the users Search Results
+                                     from the Eventful API and displaying them as markers on the map which represented the various venues from
+                                     their related search.
+                                 </p>
+
+                            <span class='modal-links'>
+                                 <a href='https://github.com/Slicktone/tukio'> 
+                                    <p> Repo </p> 
+                                 </a> 
+                                 <p> || </p>
+                                 <a href='https://tukio-webapp.herokuapp.com/'> 
+                                    <p> Website </p>
+                                 </a>
+                            </span>
+
+                                <a href='#close-link' title='Close' class='close-link'>
+                                   <p> Close </p> 
+                                </a>
+                           </div>
+                     </div>
                           <div class='project-info'>
                                 <a href='http://www.northeasttrees.org/' target='_blank'>
                                     <h2> North East Trees </h2>
@@ -162,8 +260,43 @@
                             </div>
                     </div>
 
+
                     <div class='logo-container'>
-                       <img class='jslv' src='../public/assets/img/jslv-hooks-180.png' href='http://www.jslv.com/about'></img>
+
+                        <a href='#openModalFour'>
+                            <img class='jslv' src='./assets/img/jslv-hooks-180.png' href='http://www.jslv.com/about'></img>
+                        </a>
+
+                       <div id='openModalFour' class='modalFour'>
+                          <div>
+                               <a href='#close' title='Close' class='close'> X </a>
+                                <h2> JSLV </h2>
+                                <p> JSLV is an app that allows authenticated users to search event tickets through Eventful API, 
+                                    save events of their choice and commit to buy discounted tickets for those events.
+
+                                    A progress bar dynamically updates as users commit to buy tickets for the events.</p>
+
+                                 <h2> My Role: </h2>
+                                 <p> Google Maps API + Eventful API.  Using Reactjs+Redux I was responsible for taking the users Search Results
+                                     from the Eventful API and displaying them as markers on the map which represented the various venues from
+                                     their related search.
+                                 </p>
+
+                            <span class='modal-links'>
+                                 <a href='https://github.com/Slicktone/tukio'> 
+                                    <p> Repo </p> 
+                                 </a> 
+                                 <p> || </p>
+                                 <a href='https://tukio-webapp.herokuapp.com/'> 
+                                    <p> Website </p>
+                                 </a>
+                            </span>
+
+                                <a href='#close-link' title='Close' class='close-link'>
+                                   <p> Close </p> 
+                                </a>
+                           </div>
+                     </div>
                          <div class='project-info'>
                                 <a href='http://www.jslv.com/about' target='_blank'>
                                     <h2> JSLV </h2>
@@ -194,7 +327,6 @@
 
 
 
-{#Footer Content#}
 
 
             <div class="footer-container">
