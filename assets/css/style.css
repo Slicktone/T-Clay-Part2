@@ -54,6 +54,9 @@ nav a {
     text-align: center;
 }
 
+h3.profession {
+    color: #ccb;
+}
 .about {
     text-align: center;
     background-color: #fff;
@@ -70,9 +73,9 @@ nav a {
 }
 
 .about-links {
-    max-width: 35%;
+    max-width: 100%;
     margin-top: 30px;
-    margin-left: 33%;
+    /*margin-left: 33%;*/
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -250,6 +253,75 @@ i.fa.fa-free-code-camp.fa-2x {
     color: green;
 }
 
+/* Media Queries */
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+ }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { 
+
+}
+ 
+@media all and (max-width: 480px) {
+    nav {
+        padding-bottom: 40px;
+        width: 130%;
+    }
+    .navbar {
+        float: none;
+    }
+    .about {
+        margin-left: 40px;
+    }
+    .about-container {
+        display: block;
+        max-width: 100%
+    }
+    .about-links {
+        font-size: 23px;
+    }
+    .project-container {
+        margin-left: 40px;
+    }
+    .logo-container {
+        margin-left: 0px;
+    }
+    .image-container{ 
+        display: inline-block;
+    }
+    .projects-more {
+        max-width: 100%;
+        margin-left: 0%
+    }
+    .project-linkedin {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-container {
+        width: 125%
+    }
+    footer p {
+        display: inline-block;
+        text-align: center;
+        left: 0%;
+    }
+
+    .breadCrumb {
+        display: none;
+    }
+ }
 
 /*Modal Stuff, make another stylesheet for modals*/
 
@@ -327,6 +399,7 @@ i.fa.fa-free-code-camp.fa-2x {
     left: 0;
     background: rgba(0,0,0,0.8);
     z-index: 99999;
+    overflow: scroll;
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
